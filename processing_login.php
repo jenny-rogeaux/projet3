@@ -53,4 +53,9 @@
 	
 	// on créé la session
 	new_session($data["nom"], $data["prenom"]) ;
+	
+	// on redirige l'utilisateur vers le listing des partenaires
+	?><script type="text/javascript">
+			document.location.href="index.php" ;
+		</script><?php
 ?>
