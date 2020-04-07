@@ -1,3 +1,5 @@
+<?php session_start() ; ?>
+
 <!-- 
 	Extranet du groupe bancaire GBAF :
 	- enregistrement d'un nouvel utilisateur
@@ -63,4 +65,7 @@
 		$res = $db->prepare("insert into account(nom, prenom, username, password, question, reponse) values(:nom, :prenom, :pseudo, :mdp, :question, :reponse)") ;
 		$res->execute(array("nom"=>$nom, "prenom"=>$prenom, "pseudo"=>$pseudo, "mdp"=>$mdp, "question"=>$question, "reponse"=>$reponse)) ;
 	}	
+	
+	// on créé la session
+	new_session($nom, $prenom) ;
 ?>

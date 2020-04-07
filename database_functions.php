@@ -36,4 +36,10 @@
 		
 		return false ;
 	}
+	
+	function new_session($nom, $prenom)
+	{
+		$_SESSION["nom"] = $nom ;
+		$_SESSION["prenom"] = $prenom ;
+	}
 ?>
