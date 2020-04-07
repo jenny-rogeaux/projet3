@@ -11,7 +11,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>Extranet du Groupe GBAF | Liste de nos partenaires</title>
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
