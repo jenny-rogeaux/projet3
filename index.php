@@ -42,7 +42,7 @@
 							<tr class="row">
 								<td class="col-lg-4"><p class="row"><img class="col-lg-12" src="pictures/<?php echo $data['logo'] ; ?>" alt="logo de <?php echo $data['acteur'] ; ?>" /></p></td>
 								<td class="col-lg-4"><h3><?php echo $data['acteur'] ;?></h3></td>
-								<td class="col-lg-4"><a href="#">[lire la suite]</a></td>
+								<td class="col-lg-4"><a href="display_detail_partner.php?id=<?php echo $data['id_acteur'] ;?>">[lire la suite]</a></td>
 							</tr>
 						<?php
 						}
