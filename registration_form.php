@@ -41,7 +41,13 @@
 						</div>
 						<div class="form-group">
 							<label for="question">question secrète</label> :
-							<input type="text" name="question" id="question" maxlength="100" required class="form-control" />
+							<select name="question" id="question" class="form-control" required  >
+								<option value="Quel est le nom de jeune fille de votre mère ?">Quel est le nom de jeune fille de votre mère ?</option>
+								<option value="Où avez-vous grandi ?">Où avez-vous grandi ?</option>
+								<option value="Quel était le nom de votre premier animal de compagnie ?">Quel était le nom de votre premier animal de compagnie ?</option>
+								<option value="Quel est votre film préféré ?" selected>Quel est votre film préféré ?</option>
+								<option value="Quel a été votre premier métier ?">Quel a été votre premier métier ?</option>
+							</select>
 						</div>
 						<div class="form-group">
 							<label for="reponse">réponse à la question secrète</label> :
