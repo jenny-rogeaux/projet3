@@ -68,7 +68,7 @@
 	}	
 	
 	// on créé la session
-	new_session($nom, $prenom) ;
+	new_session($nom, $prenom, $pseudo) ;
 	
 	// on redirige l'utilisateur vers le listing des partenaires
 	

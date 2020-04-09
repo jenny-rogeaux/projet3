@@ -14,7 +14,7 @@
 			
 			<p>
 				<img src="icons/person-fill.svg" alt="" width="40" height="40" />
-				<?php echo $_SESSION["nom"]." ".$_SESSION["prenom"] ?><br />
+				<?php echo "<a href='display_perso_data.php'>".$_SESSION["nom"]." ".$_SESSION["prenom"]."</a>" ?><br />
 				<a href="logout.php">déconnexion</a>
 			</p>
 		</header><?php

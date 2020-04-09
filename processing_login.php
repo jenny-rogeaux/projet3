@@ -52,7 +52,7 @@
 	}
 	
 	// on créé la session
-	new_session($data["nom"], $data["prenom"]) ;
+	new_session($data["nom"], $data["prenom"], $pseudo) ;
 	
 	// on redirige l'utilisateur vers le listing des partenaires
 	?><script type="text/javascript">
