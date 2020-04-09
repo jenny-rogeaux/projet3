@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 03 avr. 2020 à 05:46
+-- Généré le :  jeu. 09 avr. 2020 à 09:34
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -38,14 +38,7 @@ CREATE TABLE IF NOT EXISTS `account` (
   `question` varchar(100) NOT NULL,
   `reponse` varchar(100) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `account`
---
-
-INSERT INTO `account` (`id_user`, `nom`, `prenom`, `username`, `password`, `question`, `reponse`) VALUES
-(4, 'miura', 'haruma', 'hiroto', 'sakura', 'Quel est mon métier ?', 'acteur');
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
