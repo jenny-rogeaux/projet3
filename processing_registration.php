@@ -71,8 +71,8 @@
 	new_session($nom, $prenom) ;
 	
 	// on redirige l'utilisateur vers le listing des partenaires
-	/*<script type="text/javascript">
+	
+	?><script type="text/javascript">
 		alert("Votre compte a bien été créé !") ;
 		document.location.href="index.php" ;
-	</script>*/
-	?>
+	</script>
