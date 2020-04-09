@@ -12,7 +12,7 @@
 	if(isset($_POST["pseudo"]) && strlen((string)$_POST["pseudo"])<=20 && isset($_POST["mdp"]) && strlen((string)$_POST["mdp"])<=50)
 	{
 		$pseudo = (string)$_POST["pseudo"] ;
-		$mdp = (string)$_POST["mdp"] ;
+		$mdp = crypt((string)$_POST["mdp"], 'md') ;
 	}
 	
 	else

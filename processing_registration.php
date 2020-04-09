@@ -19,7 +19,8 @@
 		$nom = (string)$_POST["nom"] ;
 		$prenom = (string)$_POST["prenom"] ;
 		$pseudo = (string)$_POST["pseudo"] ;
-		$mdp = (string)$_POST["mdp"] ;
+		if(CRYPT_STD_DES==1)
+			$mdp = crypt((string)$_POST["mdp"], 'md') ;
 		$question = (string)$_POST["question"] ;
 		$reponse = (string)$_POST["reponse"] ;
 	}
@@ -70,8 +71,8 @@
 	new_session($nom, $prenom) ;
 	
 	// on redirige l'utilisateur vers le listing des partenaires
-	?><script type="text/javascript">
-			alert("Votre compte a bien été créé !") ;
-			document.location.href="index.php" ;
-		</script>
-?>
+	/*<script type="text/javascript">
+		alert("Votre compte a bien été créé !") ;
+		document.location.href="index.php" ;
+	</script>*/
+	?>
