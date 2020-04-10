@@ -10,7 +10,7 @@
 	if(isset($_SESSION["nom"]))
 	{
 		?><header class="row">
-			<p><img src="pictures/GBAF.png" alt="logo du groupe GBAF" class="col-lg-5 offset-lg-1" /></p>
+			<p><a href="index.php"><img src="pictures/GBAF.png" alt="logo du groupe GBAF" class="col-lg-5 offset-lg-1" /></a></p>
 			
 			<p>
 				<img src="icons/person-fill.svg" alt="" width="40" height="40" />
@@ -23,7 +23,7 @@
 	else
 	{
 		?><header class="row">
-			<p><img src="pictures/GBAF.png" alt="logo du groupe GBAF" class="col-lg-5 offset-lg-1" /></p>
+			<p><a href="index.php"><img src="pictures/GBAF.png" alt="logo du groupe GBAF" class="col-lg-5 offset-lg-1" /></a></p>
 		</header><?php
 	}
 
