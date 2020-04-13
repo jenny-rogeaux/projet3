@@ -11,7 +11,7 @@
 	// on récupère les données envoyées par le formulaire
 	if(isset($_POST["commentaire"]) && isset($_POST["acteur"]))
 	{
-		$commentaire = $_POST["commentaire"] ;
+		$commentaire = htmlspecialchars($_POST["commentaire"]) ;
 		$id_acteur = (int)$_POST["acteur"] ;
 	}
 	

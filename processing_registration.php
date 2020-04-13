@@ -16,13 +16,13 @@
 		&& isset($_POST["question"]) && strlen((string)$_POST["question"])<=100
 		&& isset($_POST["reponse"]) && strlen((string)$_POST["reponse"])<=100)
 	{
-		$nom = (string)$_POST["nom"] ;
-		$prenom = (string)$_POST["prenom"] ;
-		$pseudo = (string)$_POST["pseudo"] ;
+		$nom = htmlspecialchars((string)$_POST["nom"]) ;
+		$prenom = htmlspecialchars((string)$_POST["prenom"]) ;
+		$pseudo = htmlspecialchars((string)$_POST["pseudo"]) ;
 		if(CRYPT_STD_DES==1)
 			$mdp = crypt((string)$_POST["mdp"], 'md') ;
-		$question = (string)$_POST["question"] ;
-		$reponse = (string)$_POST["reponse"] ;
+		$question = htmlspecialchars((string)$_POST["question"]) ;
+		$reponse = htmlspecialchars((string)$_POST["reponse"]) ;
 	}
 	
 	else

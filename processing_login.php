@@ -11,7 +11,7 @@
 	// on récupère les données envoyées par le formulaire
 	if(isset($_POST["pseudo"]) && strlen((string)$_POST["pseudo"])<=20 && isset($_POST["mdp"]) && strlen((string)$_POST["mdp"])<=50)
 	{
-		$pseudo = (string)$_POST["pseudo"] ;
+		$pseudo = htmlspecialchars((string)$_POST["pseudo"]) ;
 		$mdp = crypt((string)$_POST["mdp"], 'md') ;
 	}
 	
