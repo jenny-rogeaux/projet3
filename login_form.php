@@ -33,6 +33,8 @@
 					</div>
 					<center><input type="submit" value="me connecter" class="btn btn-primary" /></center>
 				</form>
+				
+				<p class="col-lg-11 offset-lg-1"><a href="password_recovery_form.php">mot de passe oublié</a></p>
 			</section>
 
 			<?php include("footer.php") ; ?>

@@ -30,8 +30,11 @@
 	$res = $db->prepare("update account set password=:mdp where username=:pseudo") ;
 	$res->execute(array("mdp"=>$mdp, "pseudo"=>$_SESSION["pseudo"])) ;
 	
-	// on redirige l'utilisateur
+	// on déconnecte l'utilisateur
+	include("logout.php") ;
+	
+	// on redirige l'utilisateur vers la page de connexion
 ?><script type="text/javascript">
 	alert("Votre mot de passe à bien été mis à jour.") ;
-	document.location.href="index.php" ;
+	document.location.href="login_form.php" ;
 </script>
