@@ -67,12 +67,8 @@
 		$res->execute(array("nom"=>$nom, "prenom"=>$prenom, "pseudo"=>$pseudo, "mdp"=>$mdp, "question"=>$question, "reponse"=>$reponse)) ;
 	}	
 	
-	// on créé la session
-	new_session($nom, $prenom, $pseudo) ;
-	
-	// on redirige l'utilisateur vers le listing des partenaires
-	
+	// on redirige l'utilisateur vers le formulaire de connxion	
 	?><script type="text/javascript">
 		alert("Votre compte a bien été créé !") ;
-		document.location.href="index.php" ;
+		document.location.href="login_form.php" ;
 	</script>
