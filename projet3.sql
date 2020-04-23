@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 09 avr. 2020 à 09:34
+-- Généré le :  mer. 22 avr. 2020 à 19:53
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `account` (
   `question` varchar(100) NOT NULL,
   `reponse` varchar(100) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ DROP TABLE IF EXISTS `vote`;
 CREATE TABLE IF NOT EXISTS `vote` (
   `id_user` int(11) NOT NULL,
   `id_acteur` int(11) NOT NULL,
-  `vote` int(11) NOT NULL,
+  `vote` varchar(10) NOT NULL,
   PRIMARY KEY (`id_user`,`id_acteur`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;

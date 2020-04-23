@@ -30,7 +30,7 @@
 	if(search_username($pseudo))
 	{
 		// on vérifie le mot de passe
-		$res = $db->prepare("select nom, prenom, password from account where username=:pseudo") ;
+		$res = $db->prepare("select id_user, nom, prenom, password from account where username=:pseudo") ;
 		$res->execute(array("pseudo"=>$pseudo)) ;
 		
 		$data = $res->fetch() ;
@@ -52,7 +52,7 @@
 	}
 	
 	// on créé la session
-	new_session($data["nom"], $data["prenom"], $pseudo) ;
+	new_session($data["nom"], $data["prenom"], $pseudo, $data["id_user"]) ;
 	
 	// on redirige l'utilisateur vers le listing des partenaires
 	?><script type="text/javascript">

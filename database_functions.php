@@ -37,10 +37,11 @@
 		return false ;
 	}
 	
-	function new_session($nom, $prenom, $pseudo)
+	function new_session($nom, $prenom, $pseudo, $id)
 	{
 		$_SESSION["nom"] = $nom ;
 		$_SESSION["prenom"] = $prenom ;
 		$_SESSION["pseudo"] = $pseudo ;
+		$_SESSION["id"] = $id ;
 	}
 ?>
