@@ -37,6 +37,19 @@
 			
 			include("database_functions.php") ;
 			$db = database_connect() ;
+			
+			// on vérifie que l'identifiant existe dans la base de données
+			$res = $db->prepare("select count(id_acteur) as id_partner from acteur where id_acteur=?") ;
+			$res->execute(array($id)) ;
+			
+			$nb_id=$res->fetch() ;
+			if($nb_id["id_partner"]==0)
+			{
+				?><script>
+					alert("Partenaire inconnu") ;
+					document.location.href="index.php" ;
+				</script><?
+			}
 
 			if(isset($_GET["vote"]) && ((string)$_GET["vote"]=="like" || (string)$_GET["vote"]=='dislike'))
 			{
